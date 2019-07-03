@@ -12,19 +12,3 @@
 	</div>
 </article>
 
-<!--评论-->
-<%if(theme.comments.duoshuo_username){%>
-	<%- partial('post/duoshuo-comment',
-	{
-	    key: post.slug,
-	    title: post.title,
-	    url: config.url+url_for(post.path)
-	}) %>
-<%} else if(theme.comments.disqus_username){%>
-	<%- partial('post/disqus-comment',
-	{
-	    key: post.slug,
-	    title: post.title,
-	    url: config.url+url_for(post.path)
-	}) %>
-<%}%>

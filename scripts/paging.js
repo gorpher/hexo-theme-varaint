@@ -10,9 +10,15 @@ function pagingHelper(options) {
   function link(i) {
     return self.url_for(i === 1 ? base : base + format.replace('%d', i));
   }
-
-  if(current < total)
-    return '<a href="' + link(current + 1) + '"><i class="iconfont icon-next"></i></a></div>';
+  var pa = '';
+  if(current!=1){
+      pa+='<div class="icon-up" style="display: inline-block;margin-right:50px;"><a href="' + link(current - 1) + '#wrapper" target="_self"><i class="iconfont icon-next"></i></a></div>'
+  }
+  if(current < total){
+    pa +='<div style="display: inline-block;"><a href="' + link(current + 1) + '#wrapper" target="_self"><i class="iconfont icon-next"></i></a></div>'
+  }
+  pa += ' </div>';
+  return pa;
 }
 
 hexo.extend.helper.register('paging', pagingHelper);

@@ -55,13 +55,7 @@ count:
 
 ## comments
 
-```yaml
-comments:
-  duoshuo_username:  justpsvm
-  #disqus_username: justpsvm
-```
-
-> 在国内的话还是建议大家使用多说，disqus 必须要翻墙。
+待添加,多说评论已近关闭了
 
 ## sidebar
 
@@ -70,9 +64,9 @@ sidebar:
   enable: true #是否启用
   menus:
     -
-      name: Weibo
-      link: http://weibo.com
-      target: _blank
+      name: 首页
+      link: http://www.matosiki.site
+      target: _selft
 ```
 
 ## social
