@@ -5,8 +5,8 @@ favicon: /favicon.png
 # author headimg
 headimg: http://img.matosiki.site/avatar.jpg
 # author info
-name: 爱学习的野路子
-description: 不积跬步无以至千里.
+name: 不积跬步无以至千里
+description: 我不会下写诗,但我写的代码像诗一样优雅.
 
 # search
 search: 
@@ -27,7 +27,6 @@ count:
   enable: true
 
 
-
 # accounts support weibo/github/zhihu/twitter/douban 
 # display to former three
 social: 
@@ -40,9 +39,3 @@ social:
   -
     name: zhihu
     link: https://www.zhihu.com/
-#  -
-#    name: twitter
-#    link: 
-#  -
-#    name: douban
-#    link: 

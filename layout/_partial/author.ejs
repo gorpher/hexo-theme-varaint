@@ -12,25 +12,29 @@
 				<div class="author-contact">
 					<ul>
 						<%for(var i = 0 ; i < (theme.social.length > 3 ? 3 : theme.social.length) ; i++){%>
-							<%var item = theme.social[i]%>
-							<li>
-				        		<a href="<%=item.link%>" target="_blank">
-				        			<%if(item.name == 'weibo'){%>
-				        				<i class="iconfont icon-weibo"></i>
-				        			<%} else if(item.name == 'zhihu'){%>
-										<i class="iconfont icon-zhihu"></i>
-				        			<%} else if(item.name == 'github') {%>
-				        				<i class="iconfont icon-github"></i>
-				        			<%} else if(item.name == 'douban') {%>
-				        				<i class="iconfont icon-douban"></i>
-				        			<%} else if(item.name == 'twitter') {%>
-				        				<i class="iconfont icon-twitter"></i>
-				        			<%}%>
+						<%var item = theme.social[i]%>
+						<li>
+							<a href="<%=item.link%>" target="_blank">
+								<%if(item.name == 'weibo'){%>
+								<i class="iconfont icon-weibo"></i>
+								<%} else if(item.name == 'zhihu'){%>
+								<i class="iconfont icon-zhihu"></i>
+								<%} else if(item.name == 'github') {%>
+								<i class="iconfont icon-github"></i>
+								<%} else if(item.name == 'douban') {%>
+								<i class="iconfont icon-douban"></i>
+								<%} else if(item.name == 'twitter') {%>
+								<i class="iconfont icon-twitter"></i>
+								<%}%>
 				        		</a>
 				        	</li>
 						<%}%>
 					</ul>
 				</div>
+			</div>
+			<div class="layout__item palm-mt">
+				<div class="media__body"></div>
+				<p class='site-description'>©️2019-2020 matosiki.site 版权所有.ICP证:鄂ICP备16003435号</p>
 			</div>
 		</div>
 	</div>
