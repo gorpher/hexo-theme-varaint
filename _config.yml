@@ -1,6 +1,6 @@
 
 # site icon
-favicon: /favicon.png
+favicon: http://img.matosiki.site/favicon.png
 
 # author headimg
 headimg: http://img.matosiki.site/avatar.jpg
@@ -20,6 +20,10 @@ sidebar:
     -
       name: 首页
       link: http://www.matosiki.site/
+      target: _self
+    - 
+      name: bash教程
+      link: ./bash
       target: _self
 
 # count(统计)

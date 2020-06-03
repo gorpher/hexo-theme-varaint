@@ -1,35 +1,31 @@
-
 <!--文章列表-->
 <div class="wrapper" id="wrapper">
   <% if(index){ %>
-    <ul class="posts-list mb+ js-posts">
-      <% page.posts.each(function(post,i){ %>
-                <!--<div class="type">
-          <div class="mask">
-            <i class="iconfont"></i>
-          </div>
-          </div>-->
-        <li class="post">
-          <%if(!i){%>
-            <i class="post-status iconfont icon-icon"></i>  
-          <%}%>
-          <h2 class="no-background"  >
-            <span><a href="<%- url_for(post.path) %>"><%= post.title %></a></span>
-            <%- partial('_widget/date',{post: post,class_name: 'post-time',date_format: null}) %>
-          </h2>
-        </li>
-      <% }) %>
-    </ul>
-    <% if (page.total > 1){ %>
-      <div class="pagination mb+ js-pagination">
-        <div class="js-next pagination__load">
-            <%- paging() %>
-        </div>
+  <ul class="posts-list mb+ js-posts">
+    <% page.posts.each(function(post,i){ %>
+    <li class="post">
+      <%if(!i){%>
+      <i class="post-status iconfont icon-icon"></i>
+      <%}%>
+      <h2 class="no-background"  >
+      <% namearr=(post.path+'').split("/")%>
+      <% title = namearr[namearr.length-2]%>
+      <span><a href="<%- url_for(post.path) %>"><%=title%></a></span>
+      <%- partial('_widget/date',{post: post,class_name: 'post-time',date_format: null}) %>
+      </h2>
+    </li>
+    <% }) %>
+  </ul>
+  <% if (page.total > 1){ %>
+  <div class="pagination mb+ js-pagination">
+    <div class="js-next pagination__load">
+      <%- paging() %>
     </div>
-    <% } %>
+  </div>
+  <% } %>
 
   <%} else {%>
-    <%- partial('article',{post:post}) %>
+  <%- partial('article',{post:post}) %>
   <%}%>
 </div>
 
@@ -39,7 +35,7 @@
   </svg>
 
   <%if(post.share){%>
-    <%- partial('post/share', {
+  <%- partial('post/share', {
       key: post.slug,
       title: post.title,
       url: config.url+url_for(post.path)
@@ -48,8 +44,5 @@
 
 
   <div class="wrapper"></div>
-
+  
 <%}%>
-
-
-
