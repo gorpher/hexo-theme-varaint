@@ -1,11 +1,22 @@
 <i class="js-toggle-search iconfont icon-search"></i>
 
 
-<form class="js-search search-form search-form--modal" method="get" action="" role="search">
+<form class="js-search search-form search-form--modal" role="search">
 	<div class="search-form__inner">
 		<div>
-			<i class="iconfont icon-search"></i>
-			<input class="text-input" placeholder="<%=theme.search.placeholder%>" type="search">
+			<div class="algolia-search-input-icon">
+				<i class="fa fa-search"></i>
+			</div>
+			<input id="algolia-search-input" class="text-input algolia-search-input"
+				placeholder="<%=theme.search.placeholder%>" type="search">
+			<div class="algolia-results">
+				<div id="algolia-stats"></div>
+				<div id="algolia-hits"></div>
+				<div id="algolia-pagination" class="algolia-pagination"></div>
+			</div>
+			<span class="popup-btn-close">
+				<i class="fa fa-times-circle"></i>
+			</span>
 		</div>
 	</div>
 </form>
