@@ -98,7 +98,7 @@
         }
         $.ajaxSettings.async = false;
         var changeIMG = function () {
-            $.getJSON("./js/images.json", function (data) {
+            $.getJSON("/js/images.json", function (data) {
                 console.log(data)
                 var length = data.length;
                 var index = parseInt(Math.random() * length);
