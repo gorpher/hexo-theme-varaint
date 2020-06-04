@@ -1,0 +1,45 @@
+
+# site icon
+favicon: http://img.matosiki.site/favicon.svg
+
+# author headimg
+headimg: http://img.matosiki.site/avatar.jpg
+# author info
+name: 不积跬步无以至千里
+description: 我不会下写诗,但我写的代码像诗一样优雅.
+
+# search
+search: 
+    enable: true
+    placeholder: 你想知道什么?
+
+# sidebar
+sidebar: 
+  enable: true
+  menus:
+    -
+      name: 首页
+      link: http://www.matosiki.site/
+      target: _self
+    - 
+      name: bash教程
+      link: ./bash
+      target: _self
+
+# count(统计)
+count:
+  enable: true
+
+
+# accounts support weibo/github/zhihu/twitter/douban 
+# display to former three
+social: 
+  -
+    name: weibo
+    link: https://weibo.com/u/5212711259
+  -
+    name: github
+    link:  https://github.com/wx11055
+  -
+    name: zhihu
+    link: https://www.zhihu.com/
